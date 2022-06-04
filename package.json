@@ -2,9 +2,14 @@
   "name": "jest-from-scratch",
   "version": "0.0.1",
   "description": "Learning Jest with Typescript",
+  "engines": {
+    "node": ">= 16.14.2",
+    "npm": "~7.12.1"
+  },
   "scripts": {
     "start": "nodemon ./src/main.ts",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "npm test"
   },
   "license": "ISC",
   "devDependencies": {
